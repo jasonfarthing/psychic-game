@@ -9,12 +9,14 @@
 
     <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
 
     <title>Document</title>
 </head>
@@ -30,19 +32,25 @@
 
     </div>
 
-    <h2 id="wins">Wins:</h2>
+    <h2>Wins:</h2><input type="text" id="wins" onkeyup="userWins()">
     <!-- (# of times the user has guessed the letter correctly) -->
-    <h2 id="losses">Losses:</h2>
+    <h2>Losses:</h2><input type="text" id="losses" onkeyup="userLoss()">
     <!-- (# of times the user has failed to guess the letter correctly after exhausting all guesses) -->
-    <h2 id="guessesLeft">Guesses Left:</h2>
+    <h2>Guesses Left:</h2><input type="text" id="guessesLeft" onkeyup="userGuessesLeft()">
     <!-- (# of guesses left. This will update) -->
-    <h2 id="yourGuesses">Your Guesses So Far:</h2>
+    <h2>Your Guesses So Far:</h2><input type="text" id="yourGuesses">
     
     <!-- (the specific letters that the user typed. Display these until the user either wins or loses.) -->
 
-    <button onclick = "location.reload()">Play Again</button>
+    <button id="button" onclick = "location.reload()">Play Again</button>
     <!-- change JS file to local folder that I write -->
-    <script src="assets/javascript/game.js">
+   
+ 
+   
+   <script src="assets/javascript/game.js"></script>
+
+
+
 
 
 
